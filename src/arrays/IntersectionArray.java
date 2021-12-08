@@ -4,29 +4,33 @@ import java.util.*;
 
 public class IntersectionArray {
     public static int[] intersectionArray(int[] nums1, int[] nums2) {
-        HashSet<Integer> set = new HashSet<>();
+        List<Integer> set = new ArrayList<>();
 
-        for (int i: nums1) {
+
+        for(int i: nums1){
             set.add(i);
         }
-        HashSet<Integer> intersection = new HashSet<>();
-        for (int i : nums2) {
-            if (set.contains(i)) {
-                intersection.add(i);
+
+       List<Integer> inter = new ArrayList<>();
+        for (int i : nums2){
+            if(set.contains(i)){
+                inter.add(i);
             }
         }
-        int[] res = new int[intersection.size()];
-        int idx = 0;
-        for (int i : intersection) {
-            res[idx++] = i;
+
+
+        int index = 0;
+        int[] result = new int[inter.size()];
+
+        for (int i : inter){
+            result[index++ ] = i;
         }
-        return res;
+      return result;
     }
 
     public static void main(String[] args) {
-        int[] nums1 = {4, 9, 5};
+    int[] nums1 = {8,4, 4 , 5};
         int[] nums2 = {9, 4, 9, 8, 4};
-
         System.out.print(Arrays.toString(intersectionArray(nums1, nums2)));
     }
 }
