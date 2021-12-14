@@ -14,7 +14,6 @@ public class CanPlaceFlower {
 
 
             ) {
-
                 flowerbed[i] =1; count ++;
             }
         }
