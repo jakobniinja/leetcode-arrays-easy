@@ -27,4 +27,3 @@ public class NumberOfLinesToWrite {
         System.out.println(Arrays.toString(numberOfLinesToWrite(widths, s)));
     }
 }
-nt
