@@ -17,7 +17,7 @@ public class SortArrayByPairity {
     }
 
     public static void main(String[] args) {
-        int[] nums = {3,1,2,4};
+        int[] nums = {0};
         System.out.print(Arrays.toString(sortArrayByPairity(nums)));
     }
 }
