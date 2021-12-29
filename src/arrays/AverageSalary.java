@@ -14,8 +14,26 @@ public class AverageSalary {
         return total /(n-1);
     }
 
+    public static double  averageSalary2(int[] salaries) {
+        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
+
+        for( int s : salaries){
+            if(s > max) max = s;
+            if(s < min) min = s;
+        }
+
+        int count=0, sum =0;
+        for( int s : salaries){
+            if(s != min && s != max){
+               sum += s;
+               count ++;
+            }
+        }
+        return  (double) sum/count;
+    }
+
     public static void main(String[] args) {
         int[] nums = {4000,3000,1000,2000};
-        System.out.print(averageSalary(nums));
+        System.out.print(averageSalary2(nums));
     }
 }
