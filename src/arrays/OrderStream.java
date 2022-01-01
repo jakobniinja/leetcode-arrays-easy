@@ -18,7 +18,7 @@ public class OrderStream {
         if(idKey > cap  || idKey< 0) return new ArrayList<>();
         List<String> res = new ArrayList<>();
         map.put(idKey, value);
-        if(idKey === idx){
+        if(idKey == idx){
             while(map.containsKey(idx)){
                 res.add(map.get(idx));
                 idx++;
