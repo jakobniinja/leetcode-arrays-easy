@@ -9,9 +9,7 @@ public class MaximumWealth {
             for(int j = 0; j < grid[0].length; j++){
                 ans += grid[i][j];
             }
-            if (ans >= max) {
-                max = ans;
-            }
+            max = Math.max(ans, max);
         }
         return max;
     }
