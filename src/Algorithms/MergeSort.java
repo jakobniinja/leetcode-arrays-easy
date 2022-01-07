@@ -1,4 +1,4 @@
-package algorithms;
+package Algorithms;
 
 public class MergeSort {
     public static void mergeSort(int[] arr, int start, int end) {
