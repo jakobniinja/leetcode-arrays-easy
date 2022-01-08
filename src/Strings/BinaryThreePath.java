@@ -36,6 +36,6 @@ public class BinaryThreePath {
 
     public static void main(String[] args) {
 //        TreeNode root = new {1,2,3,null,5};
-        System.out.println(binaryThreePath(root));
+//        System.out.println(binaryThreePath(root));
     }
 }
