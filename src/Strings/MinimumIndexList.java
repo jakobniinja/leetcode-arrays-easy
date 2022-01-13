@@ -16,6 +16,7 @@ public class MinimumIndexList {
         for(int i =0; i< list1.length; i++){
             map.put(list1[i], i);
         }
+
         for(int i =0; i< list2.length; i++){
             if(map.containsKey(list2[i])){
                 int val= i+map.get(list2[i]);
