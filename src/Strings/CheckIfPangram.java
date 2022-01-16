@@ -13,8 +13,17 @@ public class CheckIfPangram {
         return set.size() == 26;
     }
 
+    public static boolean checkIfPangramII(String s ) {
+       for(char c = 'a'; c <= 'z'; c++){
+           if(!s.contains(c+""))
+               return false;
+       }
+       return true;
+    }
+
+
     public static void main(String[] args) {
-        String s = "leetcode";
-        System.out.println(checkIfPangram(s));
+        String s = "thequickbrownfoxjumpsoverthelazydog";
+        System.out.println(checkIfPangramII(s));
     }
 }
