@@ -14,7 +14,7 @@ public class RemoveGoodString {
     }
 
     public static void main(String[] args) {
-        String s = "s";
+        String s = "abBAcC";
         System.out.println(removeGoodString(s));
     }
 
