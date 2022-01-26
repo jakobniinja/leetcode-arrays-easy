@@ -2,7 +2,7 @@ package Strings;
 
 public class NumOfString {
     public static int numOfString(String[] pattern, String word) {
-        int count =1;
+        int count =0;
         for (int i = 0; i < pattern.length; i++) {
             String s = pattern[i];
             if(word.contains(s))
