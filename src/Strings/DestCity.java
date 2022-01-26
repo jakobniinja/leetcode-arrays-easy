@@ -17,7 +17,7 @@ public class DestCity {
     }
 
     public static void main(String[] args) {
-        List<List<String>> paths = { {} };
+
 
     }
 }
