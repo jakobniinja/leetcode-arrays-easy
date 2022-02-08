@@ -11,6 +11,6 @@ public class MapVector {
     }
 
     public static void main(String[] args) {
-        System.out.println(mapVector(new double[] { }));
+//        System.out.println(mapVector(new double[] { }));
     }
 }
