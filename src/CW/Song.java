@@ -3,6 +3,7 @@ package CW;
 import java.util.ArrayList;
 
 public class Song {
+
     private String title;
     private String artist;
 
@@ -29,4 +30,5 @@ public class Song {
     public static int howMany( ArrayList<String> list){
         return (int)  list.stream().map(String::toLowerCase).filter(list::add).count();
     }
+
 }
