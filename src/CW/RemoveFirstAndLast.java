@@ -10,4 +10,9 @@ public class RemoveFirstAndLast {
     public static void main(String[] args) {
         System.out.println(removeFirstAndLast("person"));
     }
+        public static String remove(String str) {
+
+       return str.replaceAll("^.|.$", "");
+
+    }
 }
