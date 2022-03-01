@@ -14,7 +14,7 @@ public class KPrimeSteps {
         }
 
     public static void main(String[] args) {
-        System.out.println(kPrimeSteps());
+//        System.out.println(kPrimeSteps());
     }
 
 }
