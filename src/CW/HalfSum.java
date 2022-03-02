@@ -13,9 +13,9 @@ public class HalfSum {
 
         return sum+1;
     }
-//    public static int halfSum2(int n){
-//        return IntStream.iterate(n, x -> x !=0, x -> x/2).sum();
-//    }
+    public static int halfSum2(int n){
+        return IntStream.iterate(n, x -> x !=0, x -> x/2).sum();
+    }
 
     public static void main(String[] args) {
         System.out.println(halfSum2(25));
