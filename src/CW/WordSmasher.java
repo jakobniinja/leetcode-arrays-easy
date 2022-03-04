@@ -13,8 +13,11 @@ public class WordSmasher {
         return sb.toString().trim();
     }
 
+    public static String smash2(String... words){
+        return String.join( " ", words);
+    }
     public static void main(String[] args) {
         String[] ws = new String[]{"Bilal", "Djaghout"};
-        System.out.println(smash(ws));
+        System.out.println(smash2(ws));
     }
 }
