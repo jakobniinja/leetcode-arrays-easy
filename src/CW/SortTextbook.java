@@ -11,6 +11,7 @@ public class SortTextbook {
         //use sort() from Collections with the static field of String class to ensure case insensitivity
        textbooks.stream().sorted(String.CASE_INSENSITIVE_ORDER).collect(Collectors.toList());
        return textbooks;
+
     }
 
     public static void main(String[] args) {
