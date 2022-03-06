@@ -1,34 +1,11 @@
 package CW;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class GuessSequence {
     public static int[] guessSequence(int num ) {
-        int[] res = new int[num];
-        if(num% 2 !=0){
-            for (int i = 0; i < num; i++) {
-                res[i] =i + 1;
-            }
-           return res;
-        }
-        else {
-//                     {1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9};
-
-            res[0] =1;
-
-            int mid =num /2;
-            int leftStart = mid +2;
-            int rightStart = 2;
-
-            for (int i = 1; i < mid; i++) {
-                res[i]=leftStart++;
-            }
-            for (int i = mid; i < num; i++) {
-               res[i]=rightStart++;
-            }
-
-            return res;
-        }
+        return IntStream.rangeClosed(1,num).mapToObj(Integer::toString).sorted().mapToInt(Integer::parseInt).toArray();
     }
 
     public static void main(String[] args) {
