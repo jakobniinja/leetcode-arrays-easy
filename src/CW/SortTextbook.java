@@ -3,12 +3,14 @@ package CW;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class SortTextbook {
     public static List<String> sort(List<String> textbooks) {
         //use sort() from Collections with the static field of String class to ensure case insensitivity
-        Collections.sort(textbooks, String.CASE_INSENSITIVE_ORDER);
-        return textbooks;
+       textbooks.stream().sorted(String.CASE_INSENSITIVE_ORDER).collect(Collectors.toList());
+       return textbooks;
     }
 
     public static void main(String[] args) {
