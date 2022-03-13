@@ -20,11 +20,11 @@ public class IsNice {
         return !set.isEmpty();
     }
 
-//    public static boolean isNice2(Integer[] arr) {
-//        return Arrays.stream(arr)
-//                .filter(i -> (Arrays.asList(arr).contains(i + 1) || Arrays.asList(arr).contains(i - 1)))
-//                .count() == arr.length && arr.length > 1;
-//    }
+    public static boolean isNice2(Integer[] arr) {
+        return Arrays.stream(arr)
+                .filter(i -> (Arrays.asList(arr).contains(i + 1) || Arrays.asList(arr).contains(i - 1)))
+                .count() == arr.length && arr.length > 1;
+    }
 
 
     public static void main(String[] args) {
