@@ -28,8 +28,8 @@ public class IsNice {
 
 
     public static void main(String[] args) {
-        Integer[] list = new Integer[]{10,10,2,2,3};
+//        Integer[] list = new Integer[]{10,10,2,2,3};
         Integer[] list = new Integer[]{5,4,3,2,1};
-        System.out.println(isNice2(list));
+        System.out.println(isNice(list));
     }
 }
