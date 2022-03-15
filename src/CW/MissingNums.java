@@ -16,7 +16,6 @@ public class MissingNums {
         List<Integer> res2 = new ArrayList<>();
 
 
-        2IntStream.of(arr).map(i -> i.)
 
         for (int i = 0; i < 10; i++) {
             res2.add(i);
@@ -26,7 +25,7 @@ public class MissingNums {
         }
         System.out.println(Arrays.toString(res2.toArray()));
 
-        System.out.println(s);
+//        System.out.println(s);
         return "hi";
     }
 
