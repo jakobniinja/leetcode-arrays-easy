@@ -1,5 +1,7 @@
 package dynamic;
 
+import java.util.HashMap;
+
 public class Tribonaci {
     public static int tribonaci(int n) {
         if (n<= 0) return 0;
@@ -50,13 +52,19 @@ public class Tribonaci {
 
 
 
+    private static HashMap<Integer, Integer> memo = new HashMap<>();
     public static int fib( int n){
         int n1 = 0, n2=1;
+
+        if(memo.containsKey(n)){
+            return memo.get(n);
+        }
         for (int i = 2; i <= n; i++) {
             int tmp = n1 + n2;
             n1 =n2;
             n2 = tmp;
         }
+        memo.put(n, n2);
         return n2;
     }
 
@@ -67,6 +75,6 @@ public class Tribonaci {
 
 
     public static void main(String[] args) {
-        System.out.println(fib(10));
+        System.out.println(fib(39));
     }
 }
